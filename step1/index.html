@@ -5,20 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BetaArt</title>
+    <title>lQSTolya</title>
     <link rel="stylesheet" href="static/css/css.css">
 </head>
 <body>
     <div class="top-nav">
         <div class="top-nav-block-center">
-            <a href="#">Home</a>
-            <a href="#">My portfolio</a>
-            <a href="#">BetaArt</a>
-            <a href="#">About me</a>
-            <a href="#">Contacts</a>
+            <a href="#" id="nav_home">Home</a>
+            <a href="#portfolio" id="nav_portfolio">My portfolio</a>
+            <a href="#" id="nav_name">lQSTolya</a>
+            <a href="#about" id="nav_about">About me</a>
+            <a href="#contact" id="nav_contacts">Contacts</a>
         </div>
-        <div class="top-nav-block-right">
-            <span>en</span>
+        <div class="top-nav-language-right">
+            <span class="language-title">en</span>
+            <div class="language-section-absolute">
+                <span>en</span>
+                <span>ru</span>
+            </div>
         </div>
     </div>
     <div class="content">
@@ -31,13 +35,13 @@
                 <img src="static/img/main img.jpg" alt="">
             </div>
             <div class="preview-title-center">
-                <span class="title-text-top">Hello, i am</span>
-                <span class="title-text-down">BefaArt.</span>
+                <span class="title-text-top" id="preview_title1">Hello, i am</span>
+                <span class="title-text-down" id="preview_title2">lQSTolya.</span>
             </div>
         </div>
-        <div class="content-my-portfolio">
+        <div id="portfolio" class="content-my-portfolio">
             <div class="my-portfolio-title-right">
-                <span class="title-text-left">My portfolio</span>
+                <span class="title-text-left" id="portfolio_title">My portfolio</span>
                 <span class="title-line-right"></span>
             </div>
             <div class="my-portfolio-projects-center">
@@ -117,16 +121,17 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-hide-projects">Hide works</div>
+            <div class="btn-show-projects" id="portfolio_btn_show">Show works</div>
+            <div class="btn-hide-projects" id="portfolio_btn_hide">Hide works</div>
         </div>
-        <div class="content-about-me">
+        <div id="about" class="content-about-me">
             <div class="about-me-title-left">
                 <span class="title-line-left"></span>
-                <span class="title-text-right">About me</span>
+                <span class="title-text-right" id="about_title">About me</span>
             </div>
             <div class="about-me-content-center">
                 <div class="content-block-left-red"></div>
-                <span class="content-text-center">I, <span class="text-red">Befa</span>, put mine
+                <span class="content-text-center" id="about_text">I, <span class="text-red">lQSTolya</span>, put mine
                      artistic abstracts
                      Works before.
                     These art pictures show
@@ -138,14 +143,14 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div id="contact" class="footer">
         <span class="footer-text-left">My contact</span>
         <div class="footer-my-contact-center">
-            <span class="my-contact-text">Phone: +015207940490</span>
-            <span class="my-contact-text">Email: befaart@gmx.de</span>
-            <span class="my-contact-text">Instagram: @befaart</span>
+            <span class="my-contact-text" id="contact_phone">Phone: +015207940490</span>
+            <span class="my-contact-text">Email: sdtolya@gmail.com</span>
+            <a href="https://t.me/lQSTolya" class="my-contact-text">Telegram: @lQSTolya</a>
         </div>
-        <a href="#" class="footer-text-right">To top ⬆</a>
+        <a href="#" class="footer-text-right" id="contact_top">To top ⬆</a>
     </div>
 <script src="static/js/js.js"></script>
 </body>

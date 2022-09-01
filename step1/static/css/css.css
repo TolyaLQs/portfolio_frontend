@@ -41,25 +41,46 @@ body{
     line-height: 22px;
 }
 
-.top-nav-block-center a:hover{
+#nav_name{
     font-size: 24px;
     line-height: 29px;
 }
 
-.top-nav-block-right{
+.top-nav-language-right{
     position: absolute;
     right: 15%;
     padding: 20px;
     cursor: pointer;
 }
 
-.top-nav-block-right:hover{
+.top-nav-language-right:hover{
     background-color: rgba(0,0,0,0.2);
 }
 
-.top-nav-block-right span{
+.top-nav-language-right span{
     font-size: 18px;
     line-height: 22px;
+}
+
+.language-section-absolute{
+    width: 100%;
+    margin-left: -20px;
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #B91616;
+    box-shadow: 5px 5px 5px #000;
+    z-index: 1000;
+}
+
+.language-section-absolute span{
+    width: 100%;
+    padding:10px 20px;
+}
+
+.language-section-absolute span:hover{
+    background-color: rgba(0,0,0,0.2);
 }
 
 .content{
@@ -182,6 +203,7 @@ body{
 
 
 .btn-hide-projects{
+    display: none;
     padding: 20px 60px;
     border: 2px solid #fff;
     border-radius: 15%;
@@ -190,6 +212,20 @@ body{
 }
 
 .btn-hide-projects:hover{
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-show-projects{
+    padding: 20px 60px;
+    border: 2px solid #fff;
+    border-radius: 15%;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.btn-show-projects:hover{
     border: 2px solid #333;
     background-color: #fff;
     color: #000;
