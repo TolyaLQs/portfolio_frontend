@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Arial';
+}
+
+.preview{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    background-image: url('../img/Rectangle 48.jpg');
+    position: relative;
+}
+
+.preview-top-nav{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+}
+
+.preview-top-nav img{
+
+}
+
+.preview-top-nav a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
+.top-nav-text{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+}
+
