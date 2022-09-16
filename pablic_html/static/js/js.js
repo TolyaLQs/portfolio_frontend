@@ -10,8 +10,6 @@ language_ru = [
     ['preview_title2', 'lQSTolya.'],
 // portfolio
     ['portfolio_title', 'Портфолио'],
-    ['portfolio_btn_show', 'Развернуть'],
-    ['portfolio_btn_hide', 'Скрыть'],
 // about
     ['about_title', 'Обо мне'],
     ['about_text', '123'],
@@ -32,8 +30,6 @@ language_en = [
     ['preview_title2', 'lQSTolya.'],
 // portfolio
     ['portfolio_title', 'Portfolio'],
-    ['portfolio_btn_show', 'Show works'],
-    ['portfolio_btn_hide', 'Hide works'],
 // about
     ['about_title', 'About me'],
     ['about_text', '321'],
@@ -60,6 +56,8 @@ function language(){
 
 }
 
+
+
 window.onload = function(){
     language();
     let nav_lang = document.querySelector('.top-nav-language-right');
@@ -84,4 +82,20 @@ window.onload = function(){
         nav_lang_section.style.display = 'none';
     })
 
+    let cart = document.querySelectorAll('.project-cart');
+    cart.forEach(function(el){
+        el.addEventListener('mouseover', function(elem){
+            el.children[0].style.display = 'flex';
+        })
+        el.addEventListener('mouseout', function(elem){
+            el.children[0].style.display = 'none';
+        })
+        el.children[0].children[0].addEventListener('click', function(info_elem){
+            el.children[1].style.display = 'flex';
+        })
+        el.children[1].children[0].addEventListener('click', function(exit_elem){
+            el.children[1].style.display = 'none';
+        })
+
+    })
 }

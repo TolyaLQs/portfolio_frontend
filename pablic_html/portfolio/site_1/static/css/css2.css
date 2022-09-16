@@ -1,0 +1,168 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Arial';
+}
+
+.preview{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 10%;
+    background-image: url('../img/Rectangle 48.jpg');
+    position: relative;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+
+.preview-top-nav{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 0 10%;
+}
+
+.preview-top-nav a{
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Arial';
+    z-index: 10000;
+    padding:20px;
+}
+
+.text-title{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.text-title1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #F7F7F7;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 100px 20%;
+}
+
+.line{
+    width:100%;
+    height:3px;
+    background-color: #E4E4E4;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.content-chapter{
+    margin-bottom: 60px;
+}
+
+.chapter-title{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.chapter-text{
+    margin-top:20px;
+}
+
+.text{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.text-red{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #FF0000;
+    opacity: 0.8;
+}
+
+.text-black{
+    font-weight: bold;
+    color: #000;
+}
+
+.text-red1{
+    color: #FF0000;
+}
+
+.list{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+
+li {
+list-style-type: none;
+}
+
+li:before {
+content: url('../img/Vector.svg');
+margin-left: -23px;
+}
+
+
+
+
+/* Маркер для списка
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.6064 7.05063L8.95093 0.395158C8.426 -0.129766 7.57466 -0.129766 7.04973 0.395158C6.52481 0.920082 6.52481 1.77143 7.04973 2.29635L12.754 8.00056L7.04973 13.7047C6.52481 14.2297 6.52481 15.081 7.04973 15.6059C7.57466 16.1309 8.426 16.1309 8.95093 15.6059L15.6064 8.95049C16.1313 8.42687 16.1313 7.57555 15.6064 7.05063ZM7.60396 6.64761L2.32011 1.07864C1.78917 0.519755 0.929201 0.519755 0.398264 1.07864C-0.132673 1.63752 -0.132673 2.54416 0.398264 3.10372L4.72155 7.66015L0.398264 12.2166C-0.132673 12.7755 -0.132673 13.6828 0.398264 14.2417C0.929201 14.8006 1.78917 14.8006 2.32011 14.2417L7.60396 8.67269C8.1349 8.11381 8.1349 7.20717 7.60396 6.64761Z" fill="#252B42"/>
+</svg>
+*/
+
+
+.footer{
+    width: 100%;
+    background: #252B42;
+    height:120px;
+    padding:0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+

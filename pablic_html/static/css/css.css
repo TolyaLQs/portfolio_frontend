@@ -186,21 +186,74 @@ body{
     width:48%;
     height:400px;
     margin: 10px;
-}
-
-.project-cart img{
-    width:100%;
-    height:100%;
+    position: relative;
+    background-image: url('../img/main img.jpg');
+    background-repeat: no-repeat;
 }
 
 .cart-name-absolute{
     display: none;
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
 }
 
 .cart-info-absolute{
     display: none;
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    z-index: 100;
+    flex-direction: column;
+    padding: 100px 80px;
 }
 
+.btn-info-back{
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    padding:20px;
+    z-index:105;
+}
+
+.card-name-top{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.card-info-down{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.btn-info-left{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding:20px;
+    z-index:101;
+}
+
+.cart-info-absolute{
+    display: none;
+
+}
 
 .btn-hide-projects{
     display: none;
@@ -290,12 +343,13 @@ body{
 
 .text-red{
     color: #B91616;
+
 }
 
 .about-me-content-center img{
     width: 50%;
-}
 
+}
 
 .footer{
     margin-top: 70px;
@@ -317,4 +371,5 @@ body{
 
 .my-contact-text{
     padding: 0 10px;
+
 }
